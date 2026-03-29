@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihirli Çiçek Bahçesi</title>
+    <meta name="description" content="Ekranda canlanan, büyülü ve zarif bir çiçek deneyimi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sihirli Çiçek</h1>
+            <p>Zarafetin ve doğanın dijital dansı.</p>
+        </header>
+
+        <div class="flower-container">
+            <div class="flower" id="magic-flower">
+                <div class="stalk">
+                    <div class="leaf leaf-1"></div>
+                    <div class="leaf leaf-2"></div>
+                </div>
+                <div class="petals-wrapper">
+                    <!-- Petals will be generated or styled here -->
+                    <div class="petal petal-1"></div>
+                    <div class="petal petal-2"></div>
+                    <div class="petal petal-3"></div>
+                    <div class="petal petal-4"></div>
+                    <div class="petal petal-5"></div>
+                    <div class="petal petal-6"></div>
+                    <div class="center-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="bloom-btn" class="btn">Çiçeği Açtır</button>
+            <button id="reset-btn" class="btn secondary">Yenile</button>
+        </div>
+    </div>
+
+    <!-- NEW: PHOTO & MESSAGE OVERLAY -->
+    <div class="photo-overlay" id="photo-overlay">
+        <div class="photo-card">
+            <img src="foto.jpg" alt="Sizin Fotoğrafınız" id="surprise-photo">
+            <h2 class="surprise-msg">Dünyadaki en güzel çiçekler sizsiniz! ✨</h2>
+            <button id="close-overlay" class="btn secondary" style="margin-top: 2rem;">Kapat</button>
+        </div>
+    </div>
+
+    <!-- NEW: MUSIC -->
+    <audio id="bg-music" loop>
+        <source src="sarki.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="particles" id="particles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
